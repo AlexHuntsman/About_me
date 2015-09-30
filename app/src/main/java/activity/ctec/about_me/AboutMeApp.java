@@ -4,8 +4,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 public class AboutMeApp extends AppCompatActivity {
+    private Button hobbieButton;
+    private Button gameingButton;
+    private Button achevementsButton;
+    private Button familyButton;
+    private Button summerButton;
+    private EditText hobbieText;
+
+    private ImageView hobbieImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
