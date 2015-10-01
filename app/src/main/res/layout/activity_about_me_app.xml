@@ -6,26 +6,6 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AboutMeApp"
     android:nestedScrollingEnabled="true">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/hobbieImage"
-        android:background="@drawable/die"
-        android:layout_above="@+id/hobbieText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:visibility="visible" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/hobbieText"
-        android:text="@string/hobbies"
-        android:visibility="visible"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,5 +49,101 @@
         android:id="@+id/summerButton"
         android:layout_below="@+id/gamingButton"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbies"
+        android:id="@+id/hobbieText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hobbieImage"
+        android:background="@drawable/die"
+        android:visibility="gone"
+        android:layout_above="@+id/hobbieText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gamingText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/gaming"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gamingImage"
+        android:background="@drawable/steam"
+        android:layout_above="@+id/gamingText"
+        android:layout_alignLeft="@+id/familyButton"
+        android:layout_alignStart="@+id/familyButton"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/achevements"
+        android:id="@+id/achevementsText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/achevementsImage"
+        android:layout_above="@+id/achevementsText"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mission_accomplished"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/family"
+        android:id="@+id/familyText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/familyImage"
+        android:background="@drawable/family"
+        android:layout_above="@+id/familyText"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summer"
+        android:id="@+id/summerText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summerImage"
+        android:layout_above="@+id/summerText"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rollercoaster"
+        android:visibility="gone" />
 
 </RelativeLayout>
