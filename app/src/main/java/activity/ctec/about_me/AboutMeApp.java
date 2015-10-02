@@ -1,5 +1,6 @@
 package activity.ctec.about_me;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 public class AboutMeApp extends AppCompatActivity {
     private Button hobbieButton;
@@ -27,6 +29,8 @@ public class AboutMeApp extends AppCompatActivity {
     private ImageView achevementsImage;
     private ImageView familyImage;
     private ImageView summerImage;
+
+    private RelativeLayout background;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,8 @@ public class AboutMeApp extends AppCompatActivity {
         achevementsImage = (ImageView) findViewById(R.id.achevementsImage);
         familyImage = (ImageView) findViewById(R.id.familyImage);
         summerImage = (ImageView) findViewById(R.id.summerImage);
+
+        background = (RelativeLayout) findViewById(R.id.background);
 
         setupListeners();
     }
