@@ -116,6 +116,32 @@ public class AboutMeApp extends AppCompatActivity {
             achevementsImage.setVisibility(View.VISIBLE);
         }
     }
+    private void changeFamilyVisibility()
+    {
+        if(familyText.getVisibility() == View.VISIBLE)
+        {
+            familyText.setVisibility(View.GONE);
+            familyImage.setVisibility(View.GONE);
+        }
+        else
+        {
+            familyText.setVisibility(View.VISIBLE);
+            familyImage.setVisibility(View.VISIBLE);
+        }
+    }
+    private void changeSummerVisibility()
+    {
+        if(summerText.getVisibility() == View.VISIBLE)
+        {
+            summerText.setVisibility(View.GONE);
+            summerImage.setVisibility(View.GONE);
+        }
+        else
+        {
+            summerText.setVisibility(View.VISIBLE);
+            summerImage.setVisibility(View.VISIBLE);
+        }
+    }
 
     private void setupListeners()
     {
@@ -138,6 +164,20 @@ public class AboutMeApp extends AppCompatActivity {
             public void onClick(View buttonView)
             {
                 changeAchevementsVisibility();
+            }
+        });
+        familyButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                changeFamilyVisibility();
+            }
+        });
+        summerButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                changeSummerVisibility();
             }
         });
     }
